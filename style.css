@@ -1,27 +1,32 @@
 body {
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: black;
+}
 
+#game-info {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #board {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: .5em;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell {
     width: 64px;
     aspect-ratio: 1/1;
     font-size:  300%;
-
     background-color: blanchedalmond;
     border: 4px outset darkgrey;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
